@@ -1,21 +1,26 @@
 import styled from 'styled-components'
+import {ReactChild} from 'react'
 
-// interface PageProps {
-//     inputBG ?: string,
-// }
+interface ButtonProps {
+    children : ReactChild,
+    bgColor ?: string,
+    color ?: string,
+    borderColor ?: string,
+}
 
-const Button = styled.button`
+const Button = styled.button<ButtonProps>`
     box-sizing: border-box;
     width: 166px;
-    height: 51px;
+    height: 40px;
+    margin-left: 10px;
     cursor:pointer;
 
-    color: #09142F;
-    border: 1px solid #09142F;
+    background: ${(props) => props.bgColor ? props.bgColor : "#FFFFFF"};
+    color: ${(props) => props.color ? props.color : "#09142F"};
+    border: 1px solid ${(props) => props.borderColor ? props.borderColor : "#09142F"};
 
     border-radius: 5px;
 
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
