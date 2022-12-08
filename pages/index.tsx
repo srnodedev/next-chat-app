@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Layout from '../app/components/Layout'
 
 // const myLoader = ({ src, width, quality }) => {
@@ -8,13 +7,7 @@ import Layout from '../app/components/Layout'
 export default function Home() {
   return (
     <Layout title="BrainBattle | Dashboard">
-      <Image 
-        // loader={myLoader}
-        blurDataURL='/image/back3.jpg'
-        placeholder="blur"
-        src="/image/back3.jpg"
-        fill
-        alt="Just..." />
+      homepage
     </Layout>
   )
 }

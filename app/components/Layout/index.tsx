@@ -1,7 +1,9 @@
 import Header from './Header';
 import Head from 'next/head';
+import Image from 'next/image';
 import { ReactChild } from 'react';
-import styles from './layout.module.css';
+import styles from '../../../styles/layout.module.css';
+import background from '../../../public/image/back3.jpg'
 
 interface LayoutProps {
     children: ReactChild,
@@ -19,6 +21,16 @@ export default function Layout({title, children}: LayoutProps){
             </Head>
     
             <main className={styles.main}>
+                {/* <Image 
+                    // loader={myLoader}
+                    placeholder="blur"
+                    quality={75}
+                    src={background}
+                    fill
+                    alt="Just..."
+                    style={{
+                    objectFit: 'cover',
+                    }} /> */}
                 <Header />
                 {children}
             </main>
