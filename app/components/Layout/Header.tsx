@@ -16,9 +16,9 @@ export default function Header() {
             <div>BrainBattle</div>
             <div className={styles.push} />
             {links.map((item : LinkProps, index) => 
-                <Link href={item.link} key={index} style={{marginLeft: 10}}> {item.title} </Link>
+                <Link href={item.link} key={index} style={{marginLeft: 10, marginRight: 10}}> {item.title} </Link>
             )}
-            {/* <Button>Sign in / Register</Button> */}
+            <Button >Sign in / Register</Button>
         </div>
     )
 }
