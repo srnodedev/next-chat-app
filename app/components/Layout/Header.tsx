@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Button from '../Button'
 import { links } from './links'
 import { useRouter } from 'next/router'
+import IconUrl from '../../../public/icon.png'
 
 interface LinkProps {
     title ?: string,
@@ -16,7 +17,7 @@ export default function Header() {
     return (
         <div className={styles.header}>
             <div onClick={() => router.push('/')} style={{cursor : "pointer", flexDirection : "row", display : "flex"}}>
-                <Image src='/icon.png' alt={'avatar'} width={27} height={21}/>
+                <Image src={IconUrl} alt={'avatar'} width={27} height={21}/>
                 <div>BrainBattle</div>
             </div>
             <div className={styles.push} />
