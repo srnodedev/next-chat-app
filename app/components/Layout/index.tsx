@@ -21,7 +21,7 @@ export default function Layout({title, children}: LayoutProps){
             </Head>
     
             <main className={styles.main}>
-                <Image 
+                {/* <Image 
                     // loader={myLoader}
                     placeholder="blur"
                     quality={75}
@@ -30,7 +30,7 @@ export default function Layout({title, children}: LayoutProps){
                     alt="Just..."
                     style={{
                     objectFit: 'cover',
-                    }} />
+                    }} /> */}
                 <Header />
                 {children}
             </main>

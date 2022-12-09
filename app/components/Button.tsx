@@ -11,7 +11,7 @@ interface ButtonProps {
 const Button = styled.button<ButtonProps>`
     box-sizing: border-box;
     width: 166px;
-    height: 40px;
+    height: 50px;
     margin-left: 10px;
     cursor:pointer;
 
