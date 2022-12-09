@@ -24,7 +24,7 @@ export default function Header() {
             {links.map((item : LinkProps, index) => 
                 <Link href={item.link} key={index} style={{marginLeft: 10, marginRight: 10}}> {item.title} </Link>
             )}
-            <Button borderColor='#09142F' bgColor='#09142F' color='#FFFFFF' onClick={() => router.push('/signup')}>Sign in / Register</Button>
+            <Button variant="secondary" onClick={() => router.push('/signup')}>Sign in / Register</Button>
         </div>
     )
 }
