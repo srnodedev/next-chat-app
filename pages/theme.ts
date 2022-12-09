@@ -1,6 +1,6 @@
 export const theme = {
 	colors: {
-		accent: '#23395D',
+		accent: '#09142F',
         accenthover: '#0E2846',
         error: '#F13C3C',
         warning: '#FFA826',

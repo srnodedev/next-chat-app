@@ -10,12 +10,9 @@ interface ButtonProps {
 }
 
 const Button = styled.button<ButtonProps>`
-	box-sizing: border-box;
-	display: inline-block;
 	text-align: center;
     padding: 15px 40px;
     height: 50px;
-    box-shadow: none;
 	color: ${(props) =>
 		props.variant === 'primary'
 			? props.theme.colors.white
@@ -28,21 +25,26 @@ const Button = styled.button<ButtonProps>`
 	border-color: ${(props) => props.theme.colors.accent};
 	border-radius: 5px;
 	font-size: 14px;
-	text-decoration: none;
+    box-shadow: none;
+    transition: 0.2s;
 	&:active {
 		border-color: ${(props) => props.variant === 'primary'
          ? props.theme.colors.accenthover
          : props.theme.colors.secondary};
+         background-color: ${(props) => props.variant === 'primary'
+          ? props.theme.colors.accenthover
+          : props.theme.colors.disabled};
 		cursor: pointer;
-    },
+        box-shadow: none;
+    };
 	&:hover {
         box-shadow: 0px 2px 4px ${(props) => props.theme.colors.accenthover};
-        transition: box-shadow 0.3s ease-in-out;
+        transition: box-shadow 0.2s ease-in-out;
 		border-color: ${(props) => props.theme.colors.accenthover};
 		cursor: pointer;
-	},
+	};
 	&:hover:not {
-        box-shadow: none;
+        transition: 0.2s;
 	}
 `;
 
