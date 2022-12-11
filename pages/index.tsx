@@ -1,4 +1,4 @@
-import Layout from '../app/components/layout'
+import Layout from "../app/components/layout"
 
 // const myLoader = ({ src, width, quality }) => {
 //   return `https://example.com/${src}?w=${width}&q=${quality || 75}`

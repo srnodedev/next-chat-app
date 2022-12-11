@@ -16,7 +16,10 @@ export default function Signup() {
 
     return (
         <Card style={{alignItems: "center"}}>
-            <Button variant="primary" onClick={() => router.push('/signup')}>Sign in / Register</Button>
+            <>
+                <div>Please enter your details to complete your booking.</div>
+                <Button variant="primary" onClick={() => router.push('/signup')}>Sign in / Register</Button>
+            </>
         </Card>
     )
 }

@@ -9,8 +9,9 @@ const Card = styled.div<CardProps>`
     box-sizing: border-box;
     display: inline-block;
     flex-direction: column;
-    align-items: center;
     padding: 50px;
+    grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
 
     background: #FFFFFF;
     /* Shadow card */
