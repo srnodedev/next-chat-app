@@ -4,18 +4,6 @@ const links = [
         link: '/',
     },
     {
-        title: 'Story',
-        link: '/',
-    },
-    {
-        title: 'Community',
-        link: '/',
-    },
-    {
-        title: 'Destinations',
-        link: '/',
-    },
-    {
         title: 'Blog',
         link: '/',
     },

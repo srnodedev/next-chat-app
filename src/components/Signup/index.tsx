@@ -15,7 +15,7 @@ export default function Signup() {
     const router = useRouter();
 
     return (
-        <Card style={{alignItems: "center"}}>
+        <Card className="items-center">
             <>
                 <div>Please enter your details to complete your booking.</div>
                 <Button variant="primary" onClick={() => router.push('/signup')}>Sign in / Register</Button>

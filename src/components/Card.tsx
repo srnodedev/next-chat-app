@@ -6,12 +6,10 @@ interface CardProps {
 }
 
 const Card = styled.div<CardProps>`
-    box-sizing: border-box;
     display: inline-block;
     flex-direction: column;
     padding: 50px;
     grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
 
     background: #FFFFFF;
     /* Shadow card */
@@ -19,5 +17,7 @@ const Card = styled.div<CardProps>`
     box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
     border-radius: 10px;
 `
+
+
 
 export default Card;

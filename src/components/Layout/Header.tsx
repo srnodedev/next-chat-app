@@ -1,4 +1,3 @@
-import styles from '../../../styles/layout.module.css';
 import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../Button'
@@ -15,15 +14,17 @@ export default function Header() {
     const router = useRouter();
 
     return (
-        <div className={styles.header}>
+        <div className="min-w-full pl-5 pr-5 pt-9 pb-9 flex flex-row items-center h-20 box-shadow-header">
             <div onClick={() => router.push('/')} style={{cursor : "pointer", flexDirection : "row", display : "flex"}}>
                 <Image src={IconUrl} alt={'avatar'} width={27} height={21}/>
                 <div>BrainBattle</div>
             </div>
-            <div className={styles.push} />
+            <div className="ml-auto" />
+            <div className="hidden md:flex">
             {links.map((item : LinkProps, index) => 
-                <Link href={item.link} key={index} style={{marginLeft: 10, marginRight: 10}}> {item.title} </Link>
+                <Link href={item.link} key={index} className="ml-4 mr-4"> {item.title} </Link>
             )}
+            </div>
             <Button variant="primary" onClick={() => router.push('/signup')}>Sign in / Register</Button>
         </div>
     )
