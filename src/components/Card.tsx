@@ -12,7 +12,6 @@ const Card = styled.div<CardProps>`
     grid-template-columns: 1fr 1fr;
 
     background: #FFFFFF;
-    /* Shadow card */
 
     box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
     border-radius: 10px;
